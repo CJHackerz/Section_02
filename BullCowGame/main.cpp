@@ -7,22 +7,23 @@ void PrintIntro();
 
 int main()
 {
+	//Function to print game intro.
+	PrintIntro();
 	
-	
-	//get guess from the player
+	//get guess from the player.
 	string Guess = "";
 	cout << "Enter your Guess: ";
 	getline(cin, Guess);
-	//repeat guess back to them
+	//repeat guess back to them.
 	cout << "Your guess was: " << Guess << endl;
 	
 	
 	return 0;
 }
 
-//Function Definations
+//Function Definations.
 void PrintIntro() {
-	//Game Introduction
+	//Game Introduction.
 	constexpr int WORD_LENGTH = 5;
 	cout << "Welcome to Bulls and Cows fun word game." << endl;
 	cout << "Can you guess the " << WORD_LENGTH;
